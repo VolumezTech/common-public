@@ -1,0 +1,13 @@
+components:
+  schemas:
+    HealthCheckResponse:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          description: Health check status message
+          example: "Service is healthy"
+      example:
+        message: "Service is healthy"

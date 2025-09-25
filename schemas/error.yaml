@@ -1,0 +1,23 @@
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          description: Error message describing what went wrong
+          example: "Invalid request parameters"
+        requestId:
+          type: string
+          description: Request ID for tracking purposes
+          example: "vlz-12345678-1234-1234-1234-123456789abc"
+        traceId:
+          type: string
+          description: Trace ID for distributed tracing
+          example: "12345678-1234-1234-1234-123456789abc"
+      example:
+        message: "Invalid request parameters"
+        requestId: "vlz-12345678-1234-1234-1234-123456789abc"
+        traceId: "12345678-1234-1234-1234-123456789abc"
